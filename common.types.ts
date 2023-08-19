@@ -5,7 +5,6 @@ export type FormState = {
     description: string;
     image: string;
     liveSiteUrl: string;
-    githubUrl: string;
     category: string;
 };
 
@@ -14,7 +13,6 @@ export interface ProjectInterface {
     description: string;
     image: string;
     liveSiteUrl: string;
-    githubUrl: string;
     category: string;
     id: string;
     createdBy: {
@@ -31,8 +29,7 @@ export interface UserProfile {
     email: string;
     description: string | null;
     avatarUrl: string;
-    githubUrl: string | null;
-    linkedinUrl: string | null;
+    linkedInUrl: string | null;
     projects: {
       edges: { node: ProjectInterface }[];
       pageInfo: {
@@ -58,6 +55,5 @@ export interface ProjectForm {
   description: string;
   image: string;
   liveSiteUrl: string;
-  githubUrl: string;
   category: string;
 }
